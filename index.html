@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <Title>
+            BMI HEALTH APP
+        </Title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="BMI.js" type="text/javascript"></script>
+    </Head>
+    <body style="border: solid black;border-style:double;border-radius: 05vh;">
+        
+      <nav>
+        <a href="BMI.html">BMI</a>
+        <a href="HeartRate.html">Heart Rate</a>
+        <a href="/Hydration.html">Water Consumption</a>
+    </nav>
+        <div class="container">
+            <H1>BMI Calculator</H1>
+            <div class="internal">
+            
+            <input type="text" id="weight" placeholder="Enter your weight in Kilograms(KG)" class="inputclass" style=" margin: 2px;"/>
+            <input type="text" id="height" placeholder="Enter your height in Metres(m)" class="inputclass" style=" margin: 2px;"/>
+        </div>
+        <div class="divBtn">
+            <input type="button" id="calBMI" value="Calculate" class="cal" onclick="calculate()"  />
+        </div>
+        <div class="container">
+            <h2 id="bmi"></h2>
+            <p id ="conclusion"></p>
+        </div>
+        </div>
+        <div class="img">
+            <img src="./image/bmi.jpeg"/>
+        </div>
+    </body>
+</html>

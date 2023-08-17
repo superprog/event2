@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration</title>
+    <link rel="stylesheet" href="style.css" />
+        <script src="/Hydration.js" type="text/javascript"></script>
+</head>
+<body style="border:solid red;display: inline; ;">
+    <nav  style="border:solid black;"">
+        <a href="BMI.html">BMI</a>
+        <a href="HeartRate.html">Heart Rate</a>
+        <a href="/Hydration.html">Water Consumption</a>
+ </nav>
+    <div class="container" style="border:solid black; margin:5% 1% 0 2%; display: flex; justify-content: space-evenly;">
+        <H1>Water Consumption</H1>
+        <div class="internal" >
+            
+            <input type="number" id="glasses" placeholder="Enter number of glasses of water you had" class="inputclass" style=" margin: 2px;"/>
+           
+        </div>
+       <br/>
+        <div class="divBtn" style="border:solid black;">
+
+            <input type="button" id="calLitre" value="Calculate in litres" class="cal" onclick="calLitres()"  />
+            <input type="button" id="clearLitre" value="Clear" class="cal" onclick="clearLitre()"  />
+        </div>
+        <div style="padding: 10%; display: none; border:solid black;" id="litdiv" >
+            <img src="./image/drop.png" height="8%" width="8%"/>
+            <p id="litres" class="pulseDiv"></p>
+        </div>
+        <div style="border:solid black; width:30%; float: right"">
+            <img src="./image/water_intake.png"  width="100%"; height="100%">
+        </div>
+    </div>
+    
+</body>
+</html>
